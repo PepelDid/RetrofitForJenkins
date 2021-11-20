@@ -38,7 +38,7 @@ public class CreateProductAndCategoryTests extends BaseTests{
 
         Integer countProductsAfter = DbUtils.countProducts(productsMapper);
 
-        //assertThat(countProductsAfter, equalTo(countProductsBefore+1));
+        assertThat(countProductsAfter, equalTo(countProductsBefore+1));
 
         PrettyLogger.DEFAULT.log(String.valueOf(countProductsBefore));
         PrettyLogger.DEFAULT.log(String.valueOf(countProductsAfter));
