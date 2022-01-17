@@ -8,9 +8,4 @@ public interface CategoryService {
 
     @GET("categories/{id}")
     Call<Category> getCategory(@Path("id") int id);
-
-    @POST("categories")
-    Call<Category> createCategory(@Body Category category);
-
-
 }

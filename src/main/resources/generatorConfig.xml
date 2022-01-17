@@ -6,7 +6,7 @@
 
 <generatorConfiguration>
     <classPathEntry
-            location="/Users/pepel/.m2/repository/org/postgresql/postgresql/42.3.1/postgresql-42.3.1.jar"/>
+            location="C:/Users/pepel/.m2/repository/org/postgresql/postgresql/42.3.1/postgresql-42.3.1.jar"/>
 
     <context id="DB2Tables" targetRuntime="MyBatis3">
         <jdbcConnection driverClass="org.postgresql.Driver"
@@ -20,18 +20,18 @@
         </javaTypeResolver>
 
         <javaModelGenerator targetPackage="retrofit.db.model" targetProject="src/main/java">
-            <property name="enableSubPackages" value="true"/>
-            <property name="trimStrings" value="true"/>
-        </javaModelGenerator>
+             <property name="enableSubPackages" value="true"/>
+             <property name="trimStrings" value="true"/>
+         </javaModelGenerator>
 
-        <sqlMapGenerator targetPackage="retrofit.db.mapper.xml" targetProject="src/main/java">
-            <property name="enableSubPackages" value="true"/>
-        </sqlMapGenerator>
+         <sqlMapGenerator targetPackage="retrofit.db.mapper.xml" targetProject="src/main/java">
+             <property name="enableSubPackages" value="true"/>
+         </sqlMapGenerator>
 
         <javaClientGenerator type="XMLMAPPER" targetPackage="retrofit.db.dao"
-                             targetProject="src/main/java">
-            <property name="enableSubPackages" value="true"/>
-        </javaClientGenerator>
+                              targetProject="src/main/java">
+             <property name="enableSubPackages" value="true"/>
+         </javaClientGenerator>
 
         <table tableName="categories">
             <property name="useActualColumnNames" value="true"/>

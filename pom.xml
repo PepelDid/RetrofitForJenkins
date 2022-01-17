@@ -64,14 +64,11 @@
                 <groupId>org.mybatis.generator</groupId>
                 <artifactId>mybatis-generator-maven-plugin</artifactId>
                 <version>1.4.0</version>
-                <configuration>
-                    <overwrite>true</overwrite>
-                </configuration>
                 <executions>
                     <execution>
                         <id>Generate MyBatis Artifacts</id>
                         <goals>
-                            <goal>generate</goal>
+                            <goal>help</goal>
                         </goals>
                     </execution>
                 </executions>
